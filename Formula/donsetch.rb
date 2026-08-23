@@ -10,20 +10,20 @@ class Donsetch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dondai44423/donsetch/releases/download/v3.0.0/donsetch-v3.0.0-darwin-x64.tar.gz"
-      sha256 "__DARWIN_X64_SHA256__"
+      sha256 "e09f0a0e258cc4be400a4e354c02702bfe667951c98f9fd5277034a8417565e0"
     else
       url "https://github.com/dondai44423/donsetch/releases/download/v3.0.0/donsetch-v3.0.0-darwin-arm64.tar.gz"
-      sha256 "__DARWIN_ARM64_SHA256__"
+      sha256 "418f88e8d37798accd1d034f78324ac2956676f548723ff079472ca42dc8de31"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/dondai44423/donsetch/releases/download/v3.0.0/donsetch-v3.0.0-linux-x64.tar.gz"
-      sha256 "__LINUX_X64_SHA256__"
+      sha256 "c76134df134881bf09ebceb730839a225a48920ea5e6e5f6c8b92b29fe3aea2d"
     else
       url "https://github.com/dondai44423/donsetch/releases/download/v3.0.0/donsetch-v3.0.0-linux-arm64.tar.gz"
-      sha256 "__LINUX_ARM64_SHA256__"
+      sha256 "2075e5ecbb774b1b68ff006ac1d8bb03def72b4932e475aef2f847d757f56f99"
     end
   end
 
