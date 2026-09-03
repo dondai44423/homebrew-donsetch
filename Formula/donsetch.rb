@@ -1,29 +1,29 @@
 # DonSeTch homebrew formula (v3).
-# Versions live at https://github.com/dondai44423/donsetch/releases —
+# Versions live at https://github.com/dondai44423/donsetch/releases:
 # update `version` + `sha256` arms at release time.
 class Donsetch < Formula
-  desc "Web fetch, search and crawl for AI agents — stealthy, keyless, token-efficient MCP server"
+  desc "Web fetch, search and crawl for AI agents: stealthy, keyless, token-efficient MCP server"
   homepage "https://github.com/dondai44423/donsetch"
-  version "3.5.1"
+  version "3.5.2"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.0/donsetch-darwin-x64.tar.gz"
-      sha256 "71dcdadbb606d65fd0e4201a3d46ac08f98c87da9c60a561815af66ca3036f37"
+      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.2/donsetch-darwin-x64.tar.gz"
+      sha256 "f7fb0d8cfdc10758a801f8d37877bd72af795c32dbe021c8438498bb42056d88"
     else
-      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.0/donsetch-darwin-arm64.tar.gz"
-      sha256 "927883de61a0cda36c43cdcd6a226afcbefeff0fc8b6f4fee11f0a235fbec436"
+      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.2/donsetch-darwin-arm64.tar.gz"
+      sha256 "8665c598686963e5f9dd491a1a1e48d26e978ceef25a2203550b9f445e79af1f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.0/donsetch-linux-x64.tar.gz"
-      sha256 "a1a66f806289f0c9c5a488e5f366f2559739ef25b98c9fc2a596a2cfaee77129"
+      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.2/donsetch-linux-x64.tar.gz"
+      sha256 "5febb094fc316ba28a49716edcd3753d0719a4decddc2d0818658c4555a93f2a"
     else
-      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.0/donsetch-linux-arm64.tar.gz"
-      sha256 "f5d5f35eb4c53ecaae1e36173accb98fae0e50ed7dbe10270bd7c0d388c75887"
+      url "https://github.com/dondai44423/donsetch/releases/download/v3.5.2/donsetch-linux-arm64.tar.gz"
+      sha256 "33af517589283dfadb7dad43674d0c0c36a11fe363ce30daee5de5cd950396cc"
     end
   end
 
