@@ -9,4 +9,5 @@ brew install donsetch
 ```
 
 Binaries are the official GitHub release builds (linux x64/arm64,
-macOS arm64/x64). Formula checksums are updated per release.
+macOS arm64/x64). The formula auto-tracks GitHub releases every 6 hours,
+and can also be updated immediately by the release workflow.
