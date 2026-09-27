@@ -27,6 +27,14 @@ class Donsetch < Formula
 
   def install
     bin.install "donsetch"
+    # ONNX Runtime is dlopen'd from beside the binary (Linux .so,
+    # macOS .dylib since v4.3.6); absent on targets built without
+    # ocr/rerank, so both installs are conditional.
+    if OS.mac?
+      bin.install "libonnxruntime.dylib" if File.exist?("libonnxruntime.dylib")
+    else
+      bin.install "libonnxruntime.so" if File.exist?("libonnxruntime.so")
+    end
   end
 
   def caveats
