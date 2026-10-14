@@ -2,26 +2,26 @@
 class Donsetch < Formula
   desc "Web fetch, search and crawl for AI agents: stealthy, keyless, token-efficient MCP server"
   homepage "https://github.com/dondai44423/donsetch"
-  version "4.10.0"
+  version "4.10.1"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.0/donsetch-darwin-x64.tar.gz"
-      sha256 "abd56cd6faf05af33f9af3aa8c7414362ad93c409eb1169b8c328cb40c3bc373"
+      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.1/donsetch-darwin-x64.tar.gz"
+      sha256 "4c919d2e54ebcff1a2448434f91cc43c26cded620308703656529029b3e225de"
     else
-      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.0/donsetch-darwin-arm64.tar.gz"
-      sha256 "7817ec4d21f5fb28fc6326cb560078df812ab5a7d2d992873e6f0d537aa55684"
+      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.1/donsetch-darwin-arm64.tar.gz"
+      sha256 "68a111f2579e1d598a69f33080ab3d62fed3fde9f28dd9508bec371928087713"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.0/donsetch-linux-x64.tar.gz"
-      sha256 "13a6ff736c1ae14609b9201fe2d6f5c0cd9e2b38943dbf8c7e24c771597c0fb0"
+      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.1/donsetch-linux-x64.tar.gz"
+      sha256 "61fb849dba39f116c9c126cf14126d74245fe19b0389b9d7ea4e9a99cc92e82a"
     else
-      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.0/donsetch-linux-arm64.tar.gz"
-      sha256 "ab0e2bec4e62e070611ab9a15c5f5eac0e31d50c9ac56ddd79b8cff30894f9f2"
+      url "https://github.com/dondai44423/donsetch/releases/download/v4.10.1/donsetch-linux-arm64.tar.gz"
+      sha256 "dac9af26208d18fefd7490d159ce319766e7704a190de85f914b1d60bf2b653b"
     end
   end
 
